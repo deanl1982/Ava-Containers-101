@@ -1,0 +1,1 @@
+choco install docker-desktop notepadplusplus.install --force -y
