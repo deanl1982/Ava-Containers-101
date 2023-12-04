@@ -69,9 +69,9 @@ resource "azurerm_windows_virtual_machine" "dockerlab" {
   }
 
   source_image_reference {
-    publisher = "MicrosoftWindowsServer"
-    offer     = "WindowsServer"
-    sku       = "2019-Datacenter"
+    publisher = "MicrosoftWindowsDesktop"
+    offer     = "windows-11"
+    sku       = "win11-21h2-avd"
     version   = "latest"
   }
 }
