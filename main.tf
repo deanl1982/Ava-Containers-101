@@ -48,7 +48,7 @@ resource "azurerm_public_ip" "dockerlabpubip" {
 }
 
 resource "azurerm_windows_virtual_machine" "dockerlab" {
-  name                = "${var.prefix}-dockerlab"
+  name                = "dockerlab"
   resource_group_name = azurerm_resource_group.main.name
   location            = azurerm_resource_group.main.location
   size                = "Standard_B2ms"
