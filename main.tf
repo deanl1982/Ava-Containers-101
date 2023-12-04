@@ -16,7 +16,6 @@ resource "azurerm_virtual_network" "main" {
   address_space       = ["10.2.0.0/16"]
   location            = azurerm_resource_group.main.location
   resource_group_name = azurerm_resource_group.main.name
-  dns_servers         = ["10.2.0.5"]
 }
 
 resource "azurerm_subnet" "internal" {

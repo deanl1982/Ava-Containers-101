@@ -15,6 +15,7 @@ terraform plan
 
 terraform apply --auto-approve
 
-** Wait 5 minutes for DC VM to reboot and initialise **
+** Wait 5 minutes for VM to reboot and initialise **
 
-az vm run-command invoke --command-id RunPowerShellScript --name avdlab-dc01 -g avdlab-resources --scripts @AVDLab-AD-Setup.ps1
+az vm run-command invoke --command-id RunPowerShellScript --name dockerlab -g dockerlab-resources --scripts @install-choco.ps1
+az vm run-command invoke --command-id RunPowerShellScript --name dockerlab -g dockerlab-resources --scripts @install-docker-desktop.ps1
