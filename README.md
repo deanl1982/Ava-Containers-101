@@ -1,6 +1,6 @@
 # Avanade - Azure Platform Practice
 ## Containers and AKS 101
-## Dean Lawrence, dean.lawrence@avanade.com
+### Dean Lawrence, dean.lawrence@avanade.com
 
 **Session 01 > My First Container!**
 
